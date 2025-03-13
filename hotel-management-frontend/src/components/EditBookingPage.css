@@ -1,0 +1,140 @@
+/* EditBookingPage.css */
+
+.booking-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 30px; /* Increased padding */
+    font-family: 'Arial', sans-serif; /* Changed font */
+    background: linear-gradient(135deg, #e0f7fa, #c2e9f2); /* Light gradient background */
+}
+
+.booking-page h1 {
+    color: #2c3e50; /* Darker title color */
+    margin-bottom: 30px; /* Increased margin */
+    font-family: 'Georgia', serif; /* Changed font */
+    font-weight: 700; /* Bold font */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 1px; /* Spacing between letters */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Added text shadow */
+}
+
+.booking-form {
+    background-color: #fff;
+    border: 1px solid #d1c4e9; /* Light purple border */
+    border-radius: 12px; /* More rounded corners */
+    padding: 30px; /* Increased padding */
+    width: 90%; /* Increased width */
+    max-width: 700px; /* Increased max width */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+    margin-bottom: 30px; /* Increased margin */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Increased margin */
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 8px; /* Increased margin */
+    color: #4a6572; /* Darker label color */
+    font-size: 1.1em; /* Increased font size */
+}
+
+.form-group input,
+.form-group select {
+    padding: 12px; /* Increased padding */
+    border: 2px solid #b3e5fc; /* Light blue border */
+    border-radius: 8px; /* More rounded corners */
+    font-size: 16px;
+    background-color: #f0f8ff; /* Light input background */
+    transition: border-color 0.3s ease; /* Smooth transition */
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #4fc3f7; /* Focus border color */
+    outline: none; /* Remove default outline */
+}
+
+.confirm-btn {
+    padding: 14px 30px; /* Increased padding */
+    border: none;
+    border-radius: 8px; /* More rounded corners */
+    background: linear-gradient(to right, #64b5f6, #2979ff); /* Gradient button */
+    color: white;
+    font-size: 18px; /* Increased font size */
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Added transitions */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.confirm-btn:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+}
+
+.booking-details {
+    background-color: #e8f5e9; /* Light green background */
+    border: 2px solid #a5d6a7; /* Green border */
+    border-radius: 12px; /* More rounded corners */
+    padding: 30px; /* Increased padding */
+    margin-top: 30px; /* Increased margin */
+    width: 90%; /* Increased width */
+    max-width: 700px; /* Increased max width */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+}
+
+.booking-details h2 {
+    color: #1b5e20; /* Dark green heading */
+    margin-bottom: 20px; /* Increased margin */
+    border-bottom: 2px solid #c8e6c9; /* Green border */
+    padding-bottom: 15px; /* Increased padding */
+    font-family: 'Times New Roman', serif; /* Changed font */
+    font-size: 1.8em;
+}
+
+.booking-details p {
+    margin: 10px 0; /* Increased margin */
+    line-height: 1.8; /* Increased line height */
+    color: #333;
+    font-size: 1.1em;
+}
+
+.booking-details strong {
+    font-weight: 700; /* Bold font */
+    color: #2e7d32; /* Darker green strong color */
+}
+
+.error-message {
+    background-color: #ffebee; /* Light red background */
+    color: #d32f2f;
+    border: 2px solid #ef9a9a; /* Red border */
+    padding: 15px; /* Increased padding */
+    border-radius: 8px; /* More rounded corners */
+    margin-bottom: 20px; /* Increased margin */
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .booking-form,
+    .booking-details {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .confirm-btn {
+        font-size: 16px;
+    }
+}

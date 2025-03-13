@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-image: url('/images/back.jpg'); /* Adjust path if needed or use full URL */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #333; /* Darker fallback color */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff; /* White text for contrast */
+  font-size: 16px;
+  position: relative; /* Needed for the overlay */
+}
+
+/* Booking Page */
+.booking-page {
+  width: 100%;
+  max-width: 1100px; /* Reduce max-width for better fit */
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  color: #333;
+}
+
+/* Heading Style */
+.booking-page h1 {
+  font-size: 36px; /* Slightly smaller title for better proportion */
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Room Selection */
+.room-selection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+/* Room Card */
+.room-card {
+  width: calc(33.33% - 20px);
+  background-color: #f8f8f8; /* Light background for room cards */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for softer effect */
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.room-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.room-card-content {
+  padding: 15px;
+  text-align: center;
+  color: #333;
+}
+
+.room-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.room-card p {
+  color: #777;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.room-card:hover {
+  transform: scale(1.05);
+}
+
+.room-card button {
+  background-color: #D4AF37; /* Gold button */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.room-card button:hover {
+  background-color: #b58e29; /* Darker gold on hover */
+}
+
+/* Booking Form */
+.booking-form {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+/* Input Fields */
+.booking-form input,
+.booking-form select {
+  background-color: #f7f7f7;
+  color: #333;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+  outline: none;
+  border-color: #D4AF37; /* Focus color to match the theme */
+}
+
+/* Confirm Button */
+.confirm-btn {
+  background-color: #D4AF37;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center; /* Centering the button */
+}
+
+.confirm-btn:hover {
+  background-color: #b58e29; /* Darker gold on hover */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .room-card {
+    width: calc(50% - 20px); /* Responsive for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .room-card {
+    width: 100%; /* Full width on very small screens */
+  }
+
+  .booking-page {
+    padding: 20px; /* Smaller padding on smaller screens */
+  }
+}

@@ -1,0 +1,134 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  min-height: 100vh;  /* Ensures the body fills the entire height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures proper layout in case of small screens */
+}
+
+/* Link Styling */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* General container */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;  /* Ensures content doesn't get too wide */
+}
+
+/* Header Styling */
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  flex-shrink: 0; /* Prevents shrinking of header */
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+/* Button Styling */
+button {
+  background: #4CAF50; /* Green background */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background 0.3s ease;
+  width: 100%;  /* Full width for buttons */
+}
+
+button:hover {
+  background: #45a049; /* Darker green */
+}
+
+/* Form Styling */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;  /* Ensures forms don't stretch too wide */
+  margin: 0 auto;  /* Center the form horizontally */
+}
+
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1em;
+  background-color: #388e3c; /* Green */
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  flex-shrink: 0; /* Prevents shrinking of footer */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  button {
+    font-size: 1em;
+    padding: 8px 16px;
+  }
+
+  form {
+    width: 100%;
+    max-width: 100%;  /* Make form take full width on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  button {
+    font-size: 1em;
+    padding: 8px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
